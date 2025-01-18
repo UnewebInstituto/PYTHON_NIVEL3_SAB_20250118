@@ -1,0 +1,101 @@
+# Thinking
+
+
+# Searching
+
+
+# Thinking
+
+
+# Responding
+
+
+
+#### ¿Qué es WSGI?
+
+**WSGI**, que significa **Web Server Gateway Interface** (Interfaz de Pasarela del Servidor Web), es un estándar que permite la comunicación entre servidores web y aplicaciones web desarrolladas en Python. Este estándar facilita la conexión y el intercambio de información entre el servidor y la aplicación, lo que simplifica el desarrollo y la implementación de aplicaciones web en Python.
+
+#### Función de WSGI
+
+WSGI actúa como un mediador que define cómo un servidor web puede enviar solicitudes a una aplicación web y cómo esta puede responder a esas solicitudes. Esto es crucial para el funcionamiento de frameworks populares como Django y Flask, ya que permite que estas aplicaciones manejen las peticiones HTTP de manera eficiente.
+
+#### Importancia de WSGI
+
+La estandarización que proporciona WSGI es fundamental para el ecosistema de desarrollo en Python, ya que permite que diferentes servidores web y aplicaciones sean interoperables. Esto significa que los desarrolladores pueden elegir entre una variedad de servidores y frameworks sin preocuparse por la compatibilidad.
+
+VIRTUAL ENVIRONMENT 
+# Thinking
+
+
+# Searching
+
+
+# Thinking
+
+
+# Responding
+
+
+
+#### ¿Qué es un entorno virtual en Python?
+
+Un **entorno virtual** en Python es un espacio aislado que permite gestionar las dependencias y bibliotecas de un proyecto sin interferir con otros proyectos o con la instalación global de Python en el sistema. Esto es especialmente útil cuando se trabaja en múltiples proyectos que pueden requerir diferentes versiones de las mismas bibliotecas.
+
+#### Funciones y beneficios
+
+- **Aislamiento**: Cada entorno virtual tiene su propio intérprete de Python y un conjunto de paquetes instalados, lo que significa que las bibliotecas de un proyecto no afectarán a las de otro.
+- **Gestión de dependencias**: Permite instalar y gestionar las dependencias específicas de cada proyecto, asegurando que cada uno funcione con las versiones correctas de las bibliotecas necesarias.
+- **Facilidad de uso**: Crear y activar un entorno virtual es un proceso sencillo, lo que facilita la configuración de nuevos proyectos.
+
+#### Cómo se crea un entorno virtual
+
+Para crear un entorno virtual en Python, se puede utilizar el módulo `venv`, que es parte de la biblioteca estándar de Python. El comando básico para crear un entorno virtual es:
+
+```
+python -m venv nombre_del_entorno
+```
+
+Esto creará un directorio llamado `nombre_del_entorno` que contendrá una copia del intérprete de Python y un espacio para instalar paquetes. Para activar el entorno, se utiliza:
+
+- En Windows:
+  ```
+  nombre_del_entorno\Scripts\activate
+  ```
+- En macOS y Linux:
+  ```
+  source nombre_del_entorno/bin/activate
+  ```
+
+Una vez activado, cualquier paquete que se instale usando `pip` se instalará solo en ese entorno virtual, manteniendo el sistema limpio y organizado.
+
+INSTALACIÓN DEL ENTORNO VIRTUAL 
+
+https://flask.palletsprojects.com/en/stable/installation/
+
+
+# Thinking
+
+
+# Searching
+
+
+# Thinking
+
+
+# Responding
+
+
+
+#### ¿Qué es un framework?
+
+Un **framework** es un conjunto de herramientas, guías y estructuras predefinidas que se utilizan para desarrollar y organizar software de manera eficiente. Funciona como una especie de **"esqueleto"** o plataforma base, sobre la cual los programadores pueden construir y personalizar sus aplicaciones. 
+
+#### Funciones y beneficios
+
+- **Estructura base**: Proporciona una estructura básica que ayuda a los desarrolladores a organizar su código y a seguir buenas prácticas de programación.
+- **Ahorro de tiempo**: Al ofrecer componentes reutilizables y convenciones predefinidas, los frameworks permiten a los desarrolladores evitar la escritura repetitiva de código, lo que acelera el proceso de desarrollo.
+- **Facilitación del desarrollo**: Los frameworks ayudan a asegurar la consistencia del código y a implementar buenas prácticas, lo que resulta en aplicaciones más robustas y mantenibles.
+
+#### Ejemplos de frameworks
+
+Existen muchos tipos de frameworks, cada uno diseñado para diferentes propósitos. Por ejemplo, en el desarrollo web, frameworks como Django y Flask son populares en Python, mientras que en JavaScript, frameworks como React y Angular son ampliamente utilizados. Estos frameworks permiten a los desarrolladores centrarse en la lógica de negocio de sus aplicaciones en lugar de preocuparse por los detalles de la infraestructura subyacente.
