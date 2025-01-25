@@ -1,0 +1,15 @@
+.error{
+  padding: 10px;
+  background-color: red;
+  color: white;
+}
+.alerta{
+  padding: 10px;
+  background-color: orange;
+  color: black;
+}
+.exito{
+  padding: 10px;
+  background-color: green;
+  color: white;
+}

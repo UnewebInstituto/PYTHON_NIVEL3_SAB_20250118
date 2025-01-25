@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='ejemplo08.css')}}">
+  <title>ejemplo08</title>
+</head>
+<body>
+  <h1>Ejemplo Ecuacion de 2do. Grado</h1>
+  <h2>Ingrese los siguientes valores</h2>
+  <form method="post">
+    <table>
+        <tr>
+            <td>a:</td>
+            <td>
+                <input type="number" step="0.01" name="a" required>
+            </td>
+        </tr>
+        <tr>
+            <td>b:</td>
+            <td>
+                <input type="number" step="0.01" name="b" required>
+            </td>
+        </tr>
+        <tr>
+            <td>c:</td>
+            <td>
+                <input type="number" step="0.01" name="c" required>
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="CALCULAR">
+</form>
+<h2>Resultado</h2>
+<ul>
+{% for tipo, mensaje in resultado %}
+    <li class="{{tipo}}">{{mensaje}}</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>

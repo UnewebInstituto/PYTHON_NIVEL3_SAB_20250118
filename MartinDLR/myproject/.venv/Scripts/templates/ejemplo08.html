@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='ejemplo08.css')}}">
+  <title>Ejemplo08</title>
+</head>
+<body>
+  <h1> Ejemplo 08. ecuacion de segudo grado</h1>
+  <h2>Ingrese los valores de A,B,C</h2>
+  <form method="post">
+    <table>
+      <tr>
+        <td>
+          Valor de a:
+        </td>
+        <td>
+          <input type="number" step="0.01" name ="a" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Valor de b:
+        </td>
+        <td>
+          <input type="number" step="0.01" name ="b" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Valor de c:
+        </td>
+        <td>
+          <input type="number" step="0.01" name ="c" required>
+        </td>
+      </tr>
+    </table>
+    <input type="submit" value="CALCULAR">
+  </form>
+    <h2>RESULTADO</h2>
+    {%for tipo, mensaje in resultado%}
+    
+      <li class="{{tipo}}">{{mensaje}}</li>
+    {% endfor %}
+  </form>
+
+</body>
+</html>

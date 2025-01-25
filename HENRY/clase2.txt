@@ -1,0 +1,11 @@
+JINJA
+https://en.wikipedia.org/wiki/Jinja_(template_engine)
+
+https://jinja.palletsprojects.com/en/stable/
+
+
+BOOTSTRAP 
+https://getbootstrap.com/
+
+W3SCHOOL
+https://www.w3schools.com/bootstrap5/bootstrap_alerts.php

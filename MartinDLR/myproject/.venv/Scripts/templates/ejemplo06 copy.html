@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plantilla</title>
+</head>
+<body>
+  <h1>Listado de enlaces</h1>
+  <ol>
+  {% for nombre, ruta_url in lista  %}
+    <li><a href="{{ruta_url}}" target="_blank">{{nombre.upper()}}</a> </li>
+  {% endfor %}
+  </ol>
+</body>
+</html>

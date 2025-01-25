@@ -1,0 +1,18 @@
+.error{
+  padding: 10px;
+  background-color: brown;
+  color: aqua;
+
+}
+.alerta{
+  padding: 10px;
+  background-color: rgb(112, 165, 42);
+  color: rgb(1, 17, 17);
+
+}
+.exito{
+  padding: 20px;
+  background-color: green;
+  color: whitesmoke;
+
+}

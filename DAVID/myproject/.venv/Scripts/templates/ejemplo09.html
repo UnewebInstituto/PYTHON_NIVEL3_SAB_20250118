@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap.min.css')}}">
+    <script src="{{url_for('static',filename='bootstrap.bundle.min.js')}}"></script>
+    <title>Ejemplo08</title>
+</head>
+<body>
+    <div class="container">
+    <h1>Ejemplo08 Ecuación de 2do. Grado</h1>
+    <h2>Ingrese los siguiente valores</h2>
+    <form method="post">
+        <div class="mb-3 mt-3">
+            <label for="a" class="form-label">a:</label>
+            <input type="number" step="0.01" class="form-control" id="a" placeholder="Ingrese el valor de 'a'" name="a">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="b" class="form-label">b:</label>
+            <input type="number" step="0.01" class="form-control" id="b" placeholder="Ingrese el valor de 'b'" name="b">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="c" class="form-label">c:</label>
+            <input type="number" step="0.01" class="form-control" id="c" placeholder="Ingrese el valor de 'c'" name="c">
+        </div>
+        <input type="submit" class="btn btn-primary" value="CALCULAR">
+    </form>
+
+    <h2>Resultado:</h2>
+
+    {% for tipo, mensaje in resultado %}
+        <div class="alert alert-{{tipo}}">
+            <strong>Atención: </strong>{{mensaje}}
+        </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
